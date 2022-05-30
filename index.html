@@ -38,10 +38,23 @@
             } else if (playerSelection == "Scissors" || "scissors" && computerSelection == "scissors") {
                 return ("It's a tie!");}
             }
+        
+        function game() {
+            for (let i = 1; i = 5; i++) {
+            
+            
+            console.log("Round " + (i));
+            console.log(round(playerSelection, computerSelection));
+
+            }
+
+        }
 
         
         const computerSelection = computerPlay();
-        console.log(round(playerSelection, computerSelection));
+        console.log(playerSelection);
+        console.log(computerSelection);
+        
 
         
 
