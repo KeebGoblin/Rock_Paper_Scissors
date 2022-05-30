@@ -12,9 +12,40 @@
         function computerPlay() {
             const rps = ["Rock", "Paper", "Scissors"];
             const randRPS = rps[Math.floor(Math.random() * rps.length)];
-            console.log(randRPS)
+            return randRPS;
+            
         }
-        computerPlay()
+        
+        const playerSelection = (prompt("Welcome to the Rock Paper Scissors Exercise! Please enter a move: "));
+
+        function round(playerSelection, computerSelection) {
+            if (playerSelection == "Rock" || "rock" && computerSelection == "Scissors") {
+                return ("You win!");
+            } else if (playerSelection == "Rock" || "rock" && computerSelection == "Paper") {
+                return ("Unlucky! You lose!");
+            } else if (playerSelection == "Rock" || "Rock" && computerSelection == "Rock") {
+                return ("It's a tie!");
+            } else if (playerSelection == "Paper" || "paper" && computerSelection == "Rock") {
+                return ("You win!");
+            } else if (playerSelection == "Paper" || "paper" && computerSelection == "Scissors") {
+                return ("Unlucky! You lose!");
+            } else if (playerSelection == "Paper" || "paper" && computerSelection == "Paper") {
+                return ("It's a tie!");
+            } else if (playerSelection == "Scissors" || "scissors" && computerSelection == "paper") {
+                return ("You win!");
+            } else if (playerSelection == "Scissors" || "scissors" && computerSelection == "Rock") {
+                return ("Unlucky! You lose!");
+            } else if (playerSelection == "Scissors" || "scissors" && computerSelection == "scissors") {
+                return ("It's a tie!");}
+            }
+
+        
+        const computerSelection = computerPlay();
+        console.log(round(playerSelection, computerSelection));
+
+        
+
+        
 
 
     </script>
