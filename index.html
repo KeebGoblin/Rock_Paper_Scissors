@@ -16,7 +16,7 @@
             
         }
         
-        const playerSelection = (prompt("Welcome to the Rock Paper Scissors Exercise! Please enter a move: "));
+        
 
         function round(playerSelection, computerSelection) {
             if (playerSelection == "Rock" || "rock" && computerSelection == "Scissors") {
@@ -42,18 +42,20 @@
         function game() {
             for (let i = 1; i = 5; i++) {
             
-            
+            const playerSelection = (prompt("Rock Paper Scissors Exercise! Please enter a move: "));
             console.log("Round " + (i));
+            const computerSelection = computerPlay();
             console.log(round(playerSelection, computerSelection));
+
 
             }
 
         }
 
+        game()
+
         
-        const computerSelection = computerPlay();
-        console.log(playerSelection);
-        console.log(computerSelection);
+        
         
 
         
